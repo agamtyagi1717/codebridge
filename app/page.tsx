@@ -10,7 +10,7 @@ import {
 } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-1.0-pro";
-const API_KEY = "AIzaSyB7WRzm3wLkEwQcGgogPkwxEiZtNte89jg";
+const API_KEY = process.env.GOOGLE_API_KEY || '';
 
 
 export default function Home() {
